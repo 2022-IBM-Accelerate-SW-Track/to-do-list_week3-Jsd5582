@@ -17,7 +17,7 @@ Implementation requirements:
 
 Instructions:
 1. To start this project we need to add a component that allows us to select a duedate for our tasks.
-    + To add the Date Picker add these imports to `src/component/AddTodo.js` 
+    + To add the Date Picker add these imports to `src/component/AddTodo.js` -
     ```
     import { DesktopDatePicker , LocalizationProvider} from '@mui/x-date-pickers';
     import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
@@ -35,12 +35,12 @@ Instructions:
         />
     </LocalizationProvider>
     ```
-    + Replace `\*value*\` with the new state variable.
+    + Replace `\*value*\` with the new state variable.-
     + Create a new handleChange function for the datepicker to set the value of your due date. You are free to name this function. 
         1. (Hint: use handleChange as a template. Don't forget to remove the content and date values. You won't need that here.) 
         2. Note that the value from the the date picker will give more that just the date in mm/dd/yyyy. To format the date we need set the due date variable to `new Date(event).toLocaleDateString()`
     + Change `\*OnChange*\` to the new handle function that you created.
-    + Finally reset the value of the duedate to null in the `onSubmit` function
+    + Finally reset the value of the duedate to null in the `onSubmit` function-
 
 2. Right now the button works however we are able submit a task with an empty due date. We need to change this so that only task with both a task name and due date create a task. 
 
