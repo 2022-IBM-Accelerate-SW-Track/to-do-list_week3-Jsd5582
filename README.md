@@ -52,7 +52,7 @@ Instructions:
             to break out the function
         } else {
             perform the action to add
-            the item to the Todo list }
+            the item to the Todo list }-
         ```    
 
 3. At this point we have a working button that properly creates tasks with due dates however the due date value isn't currently being used.
